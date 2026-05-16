@@ -1,7 +1,11 @@
 # mplty: Typst extension for matplotlib
 
 > [!NOTE]
-> Experimental project!!
+> Experimental project!
+
+`mplty` bridges [Typst](https://typst.app/), a modern typesetting system, and [matplotlib](https://matplotlib.org/), Python's standard plotting library. It lets you render rich Typst markup (styled text, boxes, math equations and pretty much **all what Typst can do**) and place the result directly onto a matplotlib Axes at any data coordinate.
+
+Matplotlib's built-in text rendering is powerful but limited when it comes to inline customization. `mplty` solves this by handing all typesetting work to Typst, which compiles your markup to a high-resolution image that is then embedded in the figure, giving you publication-quality annotations without leaving Python.
 
 <br>
 
@@ -34,37 +38,3 @@ ax_typst(1.5, 2, typst_markup)
 pip install git+https://github.com/y-sunflower/mplty.git
 ```
 
-<br>
-
-## Equation annotations
-
-```py
-import numpy as np
-import matplotlib.pyplot as plt
-from mplty import ax_typst
-
-x = np.linspace(0, 2 * np.pi, 500)
-y = np.sin(x)
-
-fig, ax = plt.subplots(figsize=(8, 4))
-
-ax.plot(x, y, lw=2)
-ax.set_xlim(0, 2 * np.pi)
-ax.set_ylim(-1.4, 1.4)
-
-ax_typst(
-    3,
-    0,
-    """
-    #box(
-      fill: rgb("#1e1e1e"),
-      radius: 6pt,
-      inset: 8pt,
-      text(fill: white)[$f(x) = sin(x)$]
-    )
-    """,
-    scale=1.2, # 20% zoom
-)
-```
-
-![](./quick-start-2.png)
