@@ -1,5 +1,8 @@
 # mplty: Typst extension for matplotlib
 
+> [!NOTE]
+> Experimental project!!
+
 <br>
 
 ## Quick start
