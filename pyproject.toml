@@ -1,7 +1,7 @@
 [project]
-name = "texter"
+name = "mplty"
 version = "0.1.0"
-description = "Description"
+description = "Typst extension for matplotlib"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
@@ -9,7 +9,7 @@ license-files = ["LICENSE"]
 authors = [
   { name = "Joseph Barbier", email = "joseph@ysunflower.com" },
 ]
-keywords = ["a", "keywords", "list", "of"]
+keywords = ["matplotlib", "typst"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Operating System :: OS Independent",
@@ -21,10 +21,10 @@ dependencies = [
 ]
 
 [project.urls]
-Documentation = "https://y-sunflower.github.io/texter/"
-Homepage = "https://y-sunflower.github.io/texter/"
-Issues = "https://github.com/y-sunflower/texter/issues"
-Repository = "https://github.com/y-sunflower/texter"
+Documentation = "https://y-sunflower.github.io/mplty/"
+Homepage = "https://y-sunflower.github.io/mplty/"
+Issues = "https://github.com/y-sunflower/mplty/issues"
+Repository = "https://github.com/y-sunflower/mplty"
 
 [dependency-groups]
 dev = [
@@ -43,7 +43,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["texter"]
+packages = ["mplty"]
 
 [tool.uv.sources]
-texter = { workspace = true }
+mplty = { workspace = true }

@@ -1,11 +1,11 @@
-# texter: Typst for matplotlib
+# mplty: Typst extension for matplotlib
 
 <br>
 
 ## Quick start
 
 ```py
-from texter import ax_typst
+from mplty import ax_typst
 
 fig, ax = plt.subplots()
 ax.plot([1, 2, 3], [1, 2, 3])
