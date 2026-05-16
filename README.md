@@ -41,7 +41,6 @@ pip install git+https://github.com/y-sunflower/mplty.git
 ```py
 import numpy as np
 import matplotlib.pyplot as plt
-
 from mplty import ax_typst
 
 x = np.linspace(0, 2 * np.pi, 500)
@@ -54,7 +53,7 @@ ax.set_xlim(0, 2 * np.pi)
 ax.set_ylim(-1.4, 1.4)
 
 ax_typst(
-    np.pi,
+    3.5,
     0,
     r"""
     #box(
@@ -73,22 +72,6 @@ ax_typst(
     )
     """,
     scale=1.2,
-)
-
-ax_typst(
-    np.pi / 2,
-    1,
-    r"""
-    #box(
-      stroke: 1pt + rgb("#ffcc00"),
-      fill: rgb("#fff8dc"),
-      radius: 4pt,
-      inset: 6pt,
-    )[
-      *Maximum* \
-      $x = pi / 2$
-    ]
-    """,
 )
 ```
 

@@ -13,7 +13,7 @@ def ax_typst(
     markup,
     ax=None,
     scale=1,
-    page_rule="#set page(width: auto, height: auto, margin: 0pt)",
+    page_rule='#set page(width: auto, height: auto, margin: 0pt, fill: rgb("#00000000"))',
     ppi=300,
     **kwargs,
 ):
