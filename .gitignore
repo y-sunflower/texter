@@ -23,5 +23,3 @@ sandbox.*
 release.sh
 
 *.typ
-*.png
-*.svg
