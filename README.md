@@ -25,6 +25,17 @@ ax_typst(1.5, 2, typst_markup)
 
 ![](./quick-start.png)
 
+<br>
+
+
+## Installation
+
+```
+pip install git+https://github.com/y-sunflower/mplty.git
+```
+
+<br>
+
 ## Equation annotations
 
 ```py
